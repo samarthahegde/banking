@@ -14,5 +14,5 @@ func Start() {
 	mux.HandleFunc("/customers", getAllCustomers)
 
 	//start serverd
-	log.Fatal(http.ListenAndServe("localhost:8000", nil))
+	log.Fatal(http.ListenAndServe("localhost:8000", mux))
 }
