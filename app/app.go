@@ -11,6 +11,6 @@ func start() {
 	http.HandleFunc("/greet", greet)
 	http.HandleFunc("/customers", getAllCustomers)
 
-	//start server
+	//start serverd
 	log.Fatal(http.ListenAndServe("localhost:8000", nil))
 }
