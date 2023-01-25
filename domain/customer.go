@@ -12,11 +12,3 @@ type Customer struct {
 type CustomerRepository interface {
 	FindAll() ([]Customer, error)
 }
-
-type CustomerRepositoryStub struct {
-	customers []Customer
-}
-
-func (s CustomerRepositoryStub) FindAll() ([]Customer, error) {
-	return s.customers, nil
-}
